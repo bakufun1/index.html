@@ -1,0 +1,90 @@
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Mh5LY4Mz15o" frameborder="0" autostart=true allowfullscreen></iframe>
+
+<br><br>
+
+
+    
+
+
+Enter x: <input type=text id="myX" value="">
+
+  <input type="button" value="My Computer Code" onclick="{
+ 
+   x = document.getElementById('myX').value
+   myTemp = ''
+   
+   if (x == 3){
+      myTemp = 'guess what, its 3'
+   }  
+   else if (x > 10) {
+        myTemp = 'ages ten and up'
+        }
+   else if (x < 3) {
+         myTemp = 'x is less than 3' 
+      } else if(x > 3){
+           myTemp = 'x is greater than 3' 
+        } 
+        if(x == 5) {
+        myTemp = 'guess what, its 5'
+        }
+        
+        if(x == 4) {
+        myTemp = 'guess what, its 4'
+        }
+        if(x == 1) {
+        myTemp = 'guess what, its 1'
+        }
+        if(x == 10) {
+        myTemp = 'double digits yo'
+        }
+    
+        
+   document.getElementById('myOut').innerHTML = myTemp     
+}"><br>
+
+<div id="myOut">Output goes here</div><br>
+
+Enter y: <input type=text id="myY" value="2"><br>
+Enter z: <input type=text id="myZ" value="5"><br>
+<form name="calc">
+<input type=button value="Complex if"  onclick="{
+   document.getElementById('myOut').innerHTML = ''
+   y = document.getElementById('myY').value
+   z = document.getElementById('myZ').value
+
+
+
+   if ((y == 2) && (z == 5)){
+      document.getElementById('myOut').innerHTML += y + 
+          ', ' + z + ' y=2 and z=5 <br>'
+   }
+   
+   if ((y == 1) && (z == 4)){
+      document.getElementById('myOut').innerHTML += y + 
+          ' &#43; ' + z + '=5 <br>'
+   }
+
+   if ((y > 2) && (z < 5)){
+      document.getElementById('myOut').innerHTML += y + 
+          ', ' + z + ' y>2 and z<5 <br>'
+   }
+        
+
+        
+}">
+</form>
+<br><br>
+    
+    
+    <b> This is bold and boring</b><br><br><br>
+<b style="background-Color : #ee9922; color:black;
+  border-style : groove ; 
+  border-width : 10px ; border-color : #3333c2;
+">
+  This is a bit more interesting
+</b><br><br><br><br>
+
+    <input type=button value="Back" style="font-size:25px" onclick="{location='window.history.back'}">
